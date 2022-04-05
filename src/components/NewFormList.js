@@ -15,6 +15,7 @@ const FormDiv = styled.div`
     width: 200px;
     height: 30px;
     margin: 20px 0px;
+    border-radius: 20px;
   }
 
   button:hover {
@@ -69,3 +70,28 @@ function NewFormList(props) {
 }
 
 export default NewFormList;
+
+// // Från föreläsning 5/4
+// const [input, setInput] = useState({
+//   task: '',
+//   date: ''
+// })
+// <input name="task" value={input.enterTask} />
+// <input value={input.enterDate} />
+
+// const addTaskHandler = (event) => {
+//   setInput({
+//     ...input,
+//     enterTask: event.target.value,
+//   })
+// };
+
+// const handleChange = (e) => {
+//   const fieldName = e.target.name
+//   const fieldValue = e.target.value === 'checkbox' ?   e.target.checked : e.target.value
+
+//   setInput(
+//     ...input,
+//     [fieldName]: fieldValue
+//   )
+// }

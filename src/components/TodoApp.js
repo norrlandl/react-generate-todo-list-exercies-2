@@ -42,7 +42,7 @@ function TodoApp(props) {
     console.log(newData);
   };
 
-  // Toggle done line
+  // Toggle done line (kan flyttas till Todo)
   const handleClick = (e) => {
     e.target.classList.toggle("done");
   };
@@ -56,6 +56,7 @@ function TodoApp(props) {
     console.log(newArray);
   };
 
+  // Ändra till ternary
   return (
     <div>
       <NewFormList onSaveData={saveDataHandler} onAdd={addListHandler} />
@@ -74,12 +75,14 @@ function TodoApp(props) {
               />
             );
           } else {
+            cName = "even";
             return (
               <Todo
                 key={todo.id}
                 todo={todo}
                 handleClick={handleClick}
                 deleteHandler={deleteHandler}
+                cName={cName}
               />
             );
           }

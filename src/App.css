@@ -3,7 +3,11 @@ body {
 }
 
 .odd {
-  background-color: beige;
+  background-color: rgb(150, 208, 208);
+}
+
+.even {
+  background-color: rgb(231, 231, 231);
 }
 
 .done,

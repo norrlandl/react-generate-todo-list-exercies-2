@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../App.css";
-// import Delete from "./Delete";
 import styled from "styled-components";
 
 const Div = styled.div`
@@ -23,7 +22,6 @@ function Todo({ todo, handleClick, deleteHandler, cName }) {
 
   const updateTaskHandler = () => {
     setTask("Uppdaterad!");
-    // console.log(task);
   };
 
   const month = todo.date.toLocaleString("en-US", { month: "long" });
